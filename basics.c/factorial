@@ -1,0 +1,18 @@
+#include <stdio.h>//library for standard input and output
+  int main()// the execution mainly starts
+  {
+  int n;//stores the  numeber
+unsigned long long fact=1;//stores the factorial value 1 as anything multiplied to 1 gives same result
+printf("Enter the number:");//displays the number
+scanf("%d",&n);//actually takes the input here
+if (n<0)//checks if positive as factorial is done on positive only
+{
+printf("Fatorial not possible\n");//displays the first message
+}
+else{
+for(int i=n;i>=1;i--)//runs a loop to traverse all numbers
+{
+fact=fact*i;// factorial is calculated
+}
+printf("factorial of a number:%llu",fact);//prints the factorial
+}
