@@ -1,0 +1,18 @@
+#include <stdio.h>// library for standard input and output
+
+int main() // main function where execution of the program actully starts
+  {
+    int a, b, c;// three angles are stored are stored inside variables
+
+    printf("Enter the three angles of the triangle: ");//displays the three angles
+    scanf("%d %d %d", &a, &b, &c);//actually takes the input for three angles
+
+    if (a==90|| b==90||c==90)// checks whether any angle is 90 degrees or not
+      {
+        printf("The triangle is a right-angled triangle.\n");//prints the message for right angled triangle
+    } else {
+        printf("The triangle is not a right-angled triangle.\n");// prints the other way
+    }
+
+    return 0;// successfull error free
+}
