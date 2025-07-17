@@ -1,0 +1,15 @@
+#include <stdio.h>//library for standard input and output
+int main()//main execution starts
+{
+    float length, width, area, perimeter;//stores different requirements for calculation
+    printf("Enter the length of the rectangle: ");//displays the length
+    scanf("%f", &length);//takes the length as input
+    printf("Enter the width of the rectangle: ");//displays the width
+    scanf("%f", &width);//takes the width as input
+    area = length * width;//calculates the area
+    perimeter = 2 * (length + width);//calculates the perimeter
+    printf("Area of the rectangle: %.2f\n", area);//displays the calculated area
+    printf("Perimeter of the rectangle: %.2f\n", perimeter);displays the calculated perimeter
+
+    return 0;//sigbals error free successfull program
+}
