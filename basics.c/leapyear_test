@@ -1,0 +1,17 @@
+#include <stdio.h>// library for standard input and output 
+
+int main() { // main function where the execution of the program actully starts
+    int year;//the year number is stored inside a var
+
+    printf("Enter a year: ");//fr displaying or prompting the year
+    scanf("%d", &year);//actually takes the input from the user
+
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) // the main working where if statement checks leap year or not
+    {
+        printf("%d is a leap year.\n", year);// displays if its a leap year
+    } else {
+        printf("%d is not a leap year.\n", year);//display if non leap year
+    }
+
+    return 0;// successfull execution
+}
