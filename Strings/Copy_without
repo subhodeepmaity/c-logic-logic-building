@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    char source[100], target[100];
+    int i = 0;
+
+    printf("Enter a string to copy: ");
+    gets(source);
+
+    // Copying each character one by one
+    while (source[i] != '\0') {
+        target[i] = source[i];
+        i++;
+    }
+    target[i] = '\0';  // Don't forget null character at the end
+
+    printf("Copied string = %s\n", target);
+    return 0;
+}
